@@ -103,7 +103,7 @@
     list-style: inherit;
   }
 
-  .main-nav:hover ul {
+  .icon-menu {
     pointer-events: none;
   }
 
