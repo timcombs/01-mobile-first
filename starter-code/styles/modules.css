@@ -13,6 +13,8 @@
   /* TODO: Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
+  font-size: 200%;
+  float: right;
 }
 
 .main-nav {
@@ -66,3 +68,59 @@
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+
+@media only screen and (min-width: 675px) {
+
+  .icon-power::before {
+  	display: none;
+  }
+  .icon-twitter3::before {
+  	display: none;
+  }
+  .icon-github::before {
+  	display: none;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .icon-home3::before {
+  	display: none;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav ul {
+    display: inherit;
+    position: relative;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    list-style: inherit;
+  }
+
+  .main-nav:hover ul {
+    pointer-events: none;
+  }
+
+  nav {
+    float: right;
+    position: sticky;
+    right: auto;
+    font-size: 75%;
+  }
+
+  a, a:link, a:active {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a:visited {
+    color: #888;
+  }
+
+}
